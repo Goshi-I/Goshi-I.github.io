@@ -1,9 +1,0 @@
----
-layout: page
-title: "First post"
-date: 2021-11-19
----
-
-# Fist post
-
-First post

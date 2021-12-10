@@ -1,10 +1,11 @@
 @charset "utf-8";
 body {
-      font-size:95%;
-     font-family: "ＭＳ ゴシック",sans-serif;
-       line-height:1.5;
-      color:#2b2b31;
+      font-size:95%;                            /* フォントサイズを95%にする */
+     font-family: "ＭＳ ゴシック",sans-serif;    /* フォントの種類をゴシック系にする */
+       line-height:1.5;                         /* 行の高さを1.5倍にする */
+      color:#2b2b31;                          /* 文字色を任意の色にする */
 }
 li {
 	list-style-type:none;		/*リストマーカー無しにする*/
+      display:inline;			/*リスト項目をインライン表示にする*/      
 }

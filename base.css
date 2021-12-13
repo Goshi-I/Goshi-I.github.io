@@ -25,6 +25,7 @@ div#pagebody {
 ============================================*/
 ul#menu {
 	width:960px; height:50px; 	/*メインメニュー部分の幅と高さ*/
+      margin:0px 20px; 		      /*上下マージン0px、左右マージン20px*/
 }
 
 #menu li {

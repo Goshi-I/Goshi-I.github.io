@@ -20,6 +20,21 @@ div#pagebody {
 	background-color:#ffffff;	      /*内容全体の背景色*/
 }
 
+img {border:0;} 				/*画像のボーダーを0にする*/
+
+/*============================================
+ヘッダ
+============================================*/
+div#header {
+	height:0px;				/*ヘッダ部分の高さ*/
+}
+div#header h1 {
+	padding:0px 0px 0px 0px;		/*見出しの位置調整*/
+	font-size:18px;				/*フォントのサイズ*/
+	font-family:Arial, Helvetica, sans-serif;	/*フォントの種類*/
+}
+div#header h1 a {text-decoration:none;} 	/*リンクの下線を無くす*/
+
 /*============================================
 メインメニュー
 ============================================*/

@@ -1,5 +1,6 @@
 @charset "utf-8";
 body {
+      background-color:#cccccc;		/*ページ全体の背景色*/
       font-size:95%;                            /* フォントサイズを95%にする */
       font-family: /*"Yu Gothic Medium",*/ "Yu Gothic", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;    /* フォントをゴシック系にする */
       line-height:1.5;                         /* 行の高さを1.5倍にする */

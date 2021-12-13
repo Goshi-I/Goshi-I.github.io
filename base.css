@@ -16,6 +16,7 @@ ul#menu {
 #menu li {
 	list-style-type:none;	/*リストマーカー無しにする*/
 	display:inline;		/*リスト項目をインライン表示にする*/
+      float:left;			/*リスト項目を横に並べる*/
 }
 
 #menu li a {

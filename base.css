@@ -80,3 +80,6 @@ ul#menu {
 	margin:0px 0px 20px 20px;	/*マージン*/
 	float:right;			/*画像を右寄せにする*/
 }
+hr {
+	clear:both;			/*フロート配置をクリアする*/
+}

@@ -50,8 +50,8 @@ ul#menu {
 }
 
 #menu li +li{
-      border-left: 1px solid #444444;  /* ここがボーダー線指定しているところ */
-      padding: 0 0px 0 0px;            /* メニューとボーダー線の間の距離感 */
+      border-left: 1px solid #666666;  /* ここがボーダー線指定しているところ */
+      padding: 0 0px 0 1px;            /* メニューとボーダー線の間の距離感 */
   }
 
 #menu li a {

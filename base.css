@@ -59,7 +59,7 @@ ul#menu {
 	color:#c7c7c7;                          /*文字色*/
 	display:block;                            /*リンク部分をブロック表示にする*/
 	width:237px; height:35px;                 /*幅と高さ*/
-      padding:0px 0px 0px 0px;                  /*上パディング*/
+      padding:15px 0px 0px 0px;                 /*上パディング*/
 	text-align:center;                        /*テキストをセンター揃えにする*/
 	text-decoration:none;                     /*リンク部分を下線無しにする*/
 }

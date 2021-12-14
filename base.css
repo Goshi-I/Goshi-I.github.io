@@ -169,4 +169,8 @@ hr {
 ============================================*/
 div#footer {
 	clear:both;			/*回り込みを解除する*/
+      height:40px;			/*高さの指定*/
+	padding:10px 0px 0px 0px;	/*パディング*/
+	font-size:x-small;		/*フォントサイズを小さくする*/
+	text-align:center;		/*センタリング*/
 }

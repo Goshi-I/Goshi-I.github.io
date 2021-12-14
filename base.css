@@ -92,7 +92,7 @@ div#submenu ul li {
 div#submenu ul li a {
 	display:block;			      /*リンク部分をブロック表示にする*/
 	height:45px;			      /*高さを45pxにする*/
-	padding:15px 0px 0px 30px;    	/*パディング*/
+	padding:15px 0px 0px 20px;    	/*パディング*/
 	text-decoration:none;		      /*リンクの下線を無くす*/
 	border-bottom:1px dotted gray;      /*リンク領域の下部にボーダーを付ける*/
 	background-image:url(images/bg_submenu.png);	/*リンク領域に背景画像を付ける*/

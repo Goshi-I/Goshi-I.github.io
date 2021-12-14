@@ -126,6 +126,15 @@ div#info {
 	float:left;			/*カラムを左寄せにする*/
 }
 
+h3 {
+	font-size:14px;			/*文字サイズ*/
+	width:660px;			/*横幅*/
+	padding:10px 0px 10px 20px;		/*パディング*/
+	background-color:rgb(66, 66, 66);		/*背景色*/
+	color:#c7c7c7;			/*文字色*/
+	border-radius:3px;			/*角丸にする*/
+}
+
 .infoimg_index {
 	width:200px; height:150px;	/*画像の表示サイズを指定*/
 	margin:0px 0px 20px 20px;	/*マージン*/

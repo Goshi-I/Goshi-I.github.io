@@ -130,6 +130,7 @@ div#submenu ul li a:before {
 div#info {
 	width:660px;		/*幅の指定*/
 	float:left;			/*カラムを左寄せにする*/
+      padding:10px 20px 0px 0px;		/*パディング*/
 }
 
 h3 {

@@ -104,6 +104,10 @@ div#submenu ul li:first-child a {
 	border-top:1px dotted gray;		/*一番上のリンクに上線を表示*/
 }
 
+div#submenu ul li a:hover	{
+	text-decoration:underline;	/*リンクにマウスが乗ったら下線を表示*/
+}
+
 /*============================================
 インフォメーション（右カラム）
 ============================================*/

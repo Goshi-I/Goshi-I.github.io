@@ -79,6 +79,16 @@ ul#menu {
 /*============================================
 サブメニュー（左カラム）
 ============================================*/
+h2 {
+	width:160px; height:43px;		/*幅と高さ*/
+	padding:17px 0px 0px 100px;		/*パディング*/
+	font-size:16px;			/*フォントサイズ*/
+	/*background-image:url(images/bg_h2.png);	背景画像*/
+	/*background-repeat:no-repeat;		背景画像を繰り返さない*/
+	background-color:rgb(66, 66, 66);		/*背景色*/
+	color:#c7c7c7;			/*文字色*/
+}
+
 div#submenu {
 	width:260px;		      /*幅の指定*/
       margin:10px 10px 10px 25px;	/*位置調整*/

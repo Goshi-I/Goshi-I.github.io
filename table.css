@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/*============================================
+テーブル
+============================================*/
+table.profile {
+	width:680px;				/*テーブル全体の幅*/
+}
+table.profile th {
+	width:150px;				/*見出しセルの幅*/
+	padding:10px;				/*パディング*/
+	text-align:center;				/*センター揃えにする*/
+	white-space:nowrap;				/*セル内の改行を禁止する*/
+	background-color:#8d8d8d;			/*セルの背景色*/
+	border-bottom:dotted #cccccc 1px;		/*セルのボーダー*/
+}
+table.profile td {
+	padding:10px;				/*パディング*/
+	background-color:#eeeeff;			/*セルの背景色*/
+	border-bottom:dotted #cccccc 1px;		/*セルのボーダー*/
+}

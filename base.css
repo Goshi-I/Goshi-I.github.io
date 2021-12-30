@@ -129,7 +129,7 @@ div#submenu ul li a {
 }
 
 div#submenu ul li:first-child a {
-	/*border-top:1px dotted gray;		一番上のリンクに上線を表示*/
+	border-top:1px dotted gray;		/*一番上のリンクに上線を表示*/
 }
 
 div#submenu ul li a:hover	{

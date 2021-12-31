@@ -15,3 +15,12 @@
 	box-shadow: 0px 0px 5px 2px #ccccee;		/*影を付ける*/
 	outline-style:none;				/*アウトライン無しにする*/
 }
+
+#form1 p input {
+	width:300px; height:40px;	/*幅と高さ*/
+	border:0;			/*ボーダー無し*/
+}
+#form1 p {
+	text-align:center;		/*センタリング*/
+	text-indent:0;			/*字下げ幅をゼロにする*/
+}

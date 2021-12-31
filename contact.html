@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="shift_jis">
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="table.css">
     <link rel="stylesheet" href="form.css">
@@ -52,15 +52,69 @@
     <!-- インフォメーション（右カラム） -->
 	<div id="info">
             <h3 id="info0002">フォームからのお問合せ</h3>
-            <iframe frameborder="0" scrolling="auto" src="https://ssl.form-mailer.jp/fms/f211aa38730274" title="HTML Form" width="103%" height="100%" style="height:850px">
-                <a href="https://ssl.form-mailer.jp/fms/f211aa38730274" title="Contact">この部分はインラインフレームを使用しています</a>
-            </iframe>
+
+            <form action="https://ssl.form-mailer.jp/fm/service/Forms/confirm" method="post" name="form1" ENCTYPE="multipart/form-data" accept-charset="UTF-8">
+                <input type="hidden" name="key" value="f211aa38730274">
+                <h1>お問合せ</h1>
+          
+                *は必須項目です
+          
+          
+                <!-- radio -->
+                <p>
+                  *お問合せ区分
+                </p>
+                <p>
+                  <input name="field_6315126" type="radio" value="0">サイト内容に関するお問合せ
+                  <input name="field_6315126" type="radio" value="1">機材・撮影に関するお問合せ
+                  <input name="field_6315126" type="radio" value="2">その他のお問合せ
+                </p>
+          
+                <!-- text -->
+                <p>
+                  *お名前
+                </p>
+                <p>
+                  <input name="field_6315124" type="text" value="" size="30" maxlength="20">
+                </p>
+          
+                <!-- email -->
+                <p>
+                  *メールアドレス
+                </p>
+                <p>
+                  <input name="field_6315118" type="text" size="30">
+                </p>
+          
+                <!-- textarea -->
+                <p>
+                  *お問合せの内容
+                </p>
+                <p>
+                  <textarea name="field_6315125" cols="30" rows="5"></textarea>
+                </p>
+          
+          
+          
+          
+          
+          
+                <p>
+                  <input name="submit" type="submit" value="確認画面へ">
+                </p>
+          
+                <p>
+                  <a href="https://www.form-mailer.jp/?utm_source=https://ssl.form-mailer.jp/fms/f211aa38730274&utm_medium=ownedmedia&utm_campaign=powered-by-formmailer" target="_blank" id="powered">Powered by FormMailer.</a>
+                </p>
+          
+                <input type="hidden" name="code" value="utf8">
+              </form>
+
                 <hr>
 
             <h3 id="info0001">メールでのお問合せ</h3>
             <p>
-                itapmovie@gmail.com
-                までメールをお送りください。
+                itapmovie@gmail.com までメールをお送りください。
             </p>
 
                 <hr>

@@ -1,1 +1,12 @@
 @charset "utf-8";
+
+/***************************************
+入力フォーム
+***************************************/
+#form1 input, #form1 textarea {
+	font-size:16px;			/*フォントサイズ*/
+	/*border:1px solid #999999;	ボーダー*/
+	padding:2px;			/*パディング*/
+	border-radius:3px;		/*角丸にする*/
+	/*box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1) inset;	影を付ける*/
+}

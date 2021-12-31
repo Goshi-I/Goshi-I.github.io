@@ -168,7 +168,7 @@ h3 {
 
 .infoimg_gallery {
 	width:680px; height:453px;	/*画像の表示サイズを指定*/
-	margin:0px 0px 20px 20px;	/*マージン*/
+	margin:0px 0px 0px 0px;	/*マージン*/
 	float:right;			/*画像を右寄せにする*/
 }
 

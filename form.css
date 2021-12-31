@@ -25,6 +25,6 @@
 	text-indent:0;			/*字下げ幅をゼロにする*/
 }
 
-#form1 input {
+input[type="text"] ,input[type="email"] {
 	width:70%;
 }

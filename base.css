@@ -85,7 +85,7 @@ ul#menu {
 ヘッダ画像
 ============================================*/
 #img_index {
-	width:960px; height:6\40px;	/*トップページのヘッダ画像の表示サイズを指定*/
+	width:960px; height:640px;	/*トップページのヘッダ画像の表示サイズを指定*/
 	margin:5px 20px;		/*マージン*/
 }
 
@@ -167,7 +167,7 @@ h3 {
 }
 
 .infoimg_gallery {
-	width:660px; height:440px;	/*画像の表示サイズを指定*/
+	width:680px; height:453px;	/*画像の表示サイズを指定*/
 	margin:10px 0px 10px 20px;	/*マージン*/
 	float:right;			/*画像を右寄せにする*/
 }

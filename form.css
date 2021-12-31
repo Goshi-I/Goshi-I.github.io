@@ -24,3 +24,7 @@
 	text-align:center;		/*センタリング*/
 	text-indent:0;			/*字下げ幅をゼロにする*/
 }
+
+#form1 input {
+	width:70%;
+}

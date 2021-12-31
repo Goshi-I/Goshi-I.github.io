@@ -148,7 +148,7 @@ div#submenu ul li a:before {
 div#info {
 	width:660px;		/*幅の指定*/
 	float:left;			/*カラムを左寄せにする*/
-      padding:10px 20px 0px 0px;		/*パディング*/
+      padding:10px 0px 0px 0px;		/*パディング*/
 }
 
 h3 {
@@ -168,7 +168,7 @@ h3 {
 
 .infoimg_gallery {
 	width:680px; height:453px;	/*画像の表示サイズを指定*/
-	margin:0px 0px 0px 0px;	/*マージン*/
+	margin:0px 0px 20px 20px;	/*マージン*/
 	float:right;			/*画像を右寄せにする*/
 }
 

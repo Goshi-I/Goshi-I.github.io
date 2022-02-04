@@ -53,7 +53,7 @@ div#header h1 a {text-decoration:none;} 	/*リンクの下線を無くす*/
 ============================================*/
 ul#menu {
 	width:1500px; height:50px; 	/*メインメニュー部分の幅と高さ*/
-      margin:0px 20px; 		      /*上下マージン0px、左右マージン20px*/
+      margin:0px 0px; 		      /*上下マージン0px、左右マージン20px*/
 }
 
 #menu li {
@@ -86,12 +86,12 @@ ul#menu {
 ============================================*/
 #img_index {
 	width:1500px; height:321px;	/*トップページのヘッダ画像の表示サイズを指定*/
-	margin:5px 20px;		/*マージン*/
+	margin:5px 0px;		/*マージン*/
 }
 
 #img_subpage {
 	width:960px; height:240px;	/*トップページ以外のヘッダ画像の表示サイズを指定*/
-	margin:5px 20px;		/*マージン*/
+	margin:5px 0px;		/*マージン*/
 }
 
 /*============================================
@@ -109,8 +109,8 @@ h2 {
 }
 
 div#submenu {
-	width:270px;		      /*幅の指定*/
-      margin:10px 10px 10px 25px;	/*位置調整*/
+	width:260px;		      /*幅の指定*/
+      margin:0px 10px 0px 0px;	/*位置調整*/
 	float:left;			      /*サブメニューのカラムを左寄せにする*/
 }
 
@@ -121,7 +121,7 @@ div#submenu ul li {
 div#submenu ul li a {
 	display:block;			      /*リンク部分をブロック表示にする*/
 	height:30px;			      /*高さを30pxにする*/
-	padding:15px 0px 0px 0px;    	/*パディング*/
+	padding:5px 0px 0px 0px;    	/*パディング*/
 	text-decoration:none;		      /*リンクの下線を無くす*/
 	border-bottom:1px dotted gray;      /*リンク領域の下部にボーダーを付ける*/
 	/*background-image:url(images/bg_submenu.png);	/*リンク領域に背景画像を付ける*/
@@ -149,7 +149,7 @@ div#submenu ul li a:before {
 div#info {
 	width:960px;		/*幅の指定*/
 	float:left;			/*カラムを左寄せにする*/
-      padding:10px 0px 0px 0px;		/*パディング*/
+      padding:0px 0px 0px 0px;		/*パディング*/
 }
 
 h3 {
@@ -183,7 +183,7 @@ twitter（右カラム）
 ============================================*/
 h4 {
 	width:160px; height:30px;		/*幅と高さ*/
-	padding:10px 0px 1px 100px;		/*パディング*/
+	padding:0px 0px 0px 0px;		/*パディング*/
 	font-size:15px;			/*フォントサイズ*/
 	/*background-image:url(images/bg_h2.png);	背景画像*/
 	/*background-repeat:no-repeat;		背景画像を繰り返さない*/
@@ -193,9 +193,9 @@ h4 {
 }
 
 div#twitter {
-	width:270px;		      /*幅の指定*/
-      margin:10px 10px 10px 25px;	/*位置調整*/
-	float:left;			      /*カラムを左寄せにする*/
+	width:260px;		      /*幅の指定*/
+      margin:0px 0px 0px 0px;	/*位置調整*/
+	float:right;			      /*カラムを左寄せにする*/
 }
 
 /*============================================

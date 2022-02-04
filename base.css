@@ -23,8 +23,8 @@ div#pagebody {
 img {border:0;} 				/*画像のボーダーを0にする*/
 
 p {
-	width:660px;		/*幅の指定*/
-	margin:10px;		/*マージン*/
+	width:940px;		/*幅の指定*/
+	margin:10px 10px 0px 10px;	/*位置調整*/
 	text-indent:1em;		/*インデント幅*/
 }
 
@@ -98,17 +98,18 @@ ul#menu {
 サブメニュー（左カラム）
 ============================================*/
 h2 {
-	width:160px; height:43px;		/*幅と高さ*/
-	padding:17px 0px 0px 100px;		/*パディング*/
-	font-size:16px;			/*フォントサイズ*/
+	width:160px; height:30px;		/*幅と高さ*/
+	padding:10px 0px 1px 100px;		/*パディング*/
+	font-size:15px;			/*フォントサイズ*/
 	/*background-image:url(images/bg_h2.png);	背景画像*/
 	/*background-repeat:no-repeat;		背景画像を繰り返さない*/
 	background-color:rgb(66, 66, 66);		/*背景色*/
 	color:#c7c7c7;			/*文字色*/
+	border-radius:5px;			/*角丸にする*/
 }
 
 div#submenu {
-	width:260px;		      /*幅の指定*/
+	width:270px;		      /*幅の指定*/
       margin:10px 10px 10px 25px;	/*位置調整*/
 	float:left;			      /*サブメニューのカラムを左寄せにする*/
 }
@@ -119,11 +120,11 @@ div#submenu ul li {
 
 div#submenu ul li a {
 	display:block;			      /*リンク部分をブロック表示にする*/
-	height:45px;			      /*高さを45pxにする*/
-	padding:15px 0px 0px 20px;    	/*パディング*/
+	height:30px;			      /*高さを30pxにする*/
+	padding:15px 0px 0px 0px;    	/*パディング*/
 	text-decoration:none;		      /*リンクの下線を無くす*/
-	/*border-bottom:1px dotted gray;      リンク領域の下部にボーダーを付ける*/
-	background-image:url(images/bg_submenu.png);	/*リンク領域に背景画像を付ける*/
+	border-bottom:1px dotted gray;      /*リンク領域の下部にボーダーを付ける*/
+	/*background-image:url(images/bg_submenu.png);	/*リンク領域に背景画像を付ける*/
 	background-repeat:no-repeat;  	/*背景画像を繰り返さない*/
 	color:#333333;                      /*文字色*/
 }
@@ -143,27 +144,27 @@ div#submenu ul li a:before {
 }
 
 /*============================================
-インフォメーション（右カラム）
+インフォメーション（中カラム）
 ============================================*/
 div#info {
-	width:660px;		/*幅の指定*/
+	width:960px;		/*幅の指定*/
 	float:left;			/*カラムを左寄せにする*/
       padding:10px 0px 0px 0px;		/*パディング*/
 }
 
 h3 {
 	font-size:14px;			/*文字サイズ*/
-	width:660px;			/*横幅*/
+	width:940px;			/*横幅*/
 	padding:10px 0px 10px 20px;		/*パディング*/
 	background-color:rgb(66, 66, 66);		/*背景色*/
 	color:#c7c7c7;			/*文字色*/
-	border-radius:3px;			/*角丸にする*/
+	border-radius:5px;			/*角丸にする*/
 }
 
 .infoimg_index {
 	width:200px; height:133px;	/*画像の表\示サイズを指定*/
-	margin:0px 0px 20px 20px;	/*マージン*/
-	float:right;			/*画像を右寄せにする*/
+	margin:0px 20px 20px 0px;	/*マージン*/
+	float:left;			/*画像を右寄せにする*/
 }
 
 .infoimg_gallery {
@@ -175,6 +176,26 @@ h3 {
 
 hr {
 	clear:both;			/*フロート配置をクリアする*/
+}
+
+/*============================================
+twitter（右カラム）
+============================================*/
+h4 {
+	width:160px; height:30px;		/*幅と高さ*/
+	padding:10px 0px 1px 100px;		/*パディング*/
+	font-size:15px;			/*フォントサイズ*/
+	/*background-image:url(images/bg_h2.png);	背景画像*/
+	/*background-repeat:no-repeat;		背景画像を繰り返さない*/
+	background-color:rgb(66, 66, 66);		/*背景色*/
+	color:#c7c7c7;			/*文字色*/
+	border-radius:5px;			/*角丸にする*/
+}
+
+div#twitter {
+	width:270px;		      /*幅の指定*/
+      margin:10px 10px 10px 25px;	/*位置調整*/
+	float:left;			      /*カラムを左寄せにする*/
 }
 
 /*============================================

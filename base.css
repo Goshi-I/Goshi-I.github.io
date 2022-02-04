@@ -16,7 +16,7 @@ body {
 }
 
 div#pagebody {
-      width:1000px; margin:0 auto;	       /*内容全体をセンタリング*/
+      width:1500px; margin:0 auto;	       /*内容全体をセンタリング*/
 	background-color:#cccccc;	      /*内容全体の背景色*/
 }
 
@@ -52,7 +52,7 @@ div#header h1 a {text-decoration:none;} 	/*リンクの下線を無くす*/
 メインメニュー
 ============================================*/
 ul#menu {
-	width:960px; height:50px; 	/*メインメニュー部分の幅と高さ*/
+	width:1500px; height:50px; 	/*メインメニュー部分の幅と高さ*/
       margin:0px 20px; 		      /*上下マージン0px、左右マージン20px*/
 }
 
@@ -63,15 +63,15 @@ ul#menu {
 }
 
 #menu li +li{
-      border-left: 1px solid #666666;        /*ここがボーダー線指定しているところ*/ 
-      padding: 0 0px 0 1px;                    /*メニューとボーダー線の間の距離感 */
+      /*border-left: 1px solid #666666;        /*ここがボーダー線指定しているところ*/ 
+      /*padding: 0 0px 0 1px;                    /*メニューとボーダー線の間の距離感 */
   }
 
 #menu li a {
       background-color:rgb(66, 66, 66);       /*背景色*/
 	color:#c7c7c7;                          /*文字色*/
 	display:block;                            /*リンク部分をブロック表示にする*/
-	width:190px; height:35px;                 /*幅と高さ*/
+	width:300px; height:35px;                 /*幅と高さ*/
       padding:15px 0px 0px 0px;                 /*上パディング*/
 	text-align:center;                        /*テキストをセンター揃えにする*/
 	text-decoration:none;                     /*リンク部分を下線無しにする*/
@@ -85,7 +85,7 @@ ul#menu {
 ヘッダ画像
 ============================================*/
 #img_index {
-	width:960px; height:640px;	/*トップページのヘッダ画像の表示サイズを指定*/
+	width:1500px; height:660px;	/*トップページのヘッダ画像の表示サイズを指定*/
 	margin:5px 20px;		/*マージン*/
 }
 

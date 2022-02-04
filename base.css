@@ -62,10 +62,10 @@ ul#menu {
       float:left;			/*リスト項目を横に並べる*/
 }
 
-#menu li +li{
+/*#menu li +li{
       /*border-left: 1px solid #666666;        /*ここがボーダー線指定しているところ*/ 
       /*padding: 0 0px 0 1px;                    /*メニューとボーダー線の間の距離感 */
-  }
+/*  }*/
 
 #menu li a {
       background-color:rgb(66, 66, 66);       /*背景色*/

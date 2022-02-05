@@ -43,8 +43,219 @@
 	    <h2>新着情報</h2>
 	    <ul>
 		    <li><a href="#info0002"><span style="color:#888888;font-size:0.8em;display:inline-block;width:6em;">2021.11.29</span><span style="font-size:0.8em;">2021 SUPER GT Rd.8 富士ス…</span></a></li>
-            <li><a href="#info0001"><span style="color:#888888;font-size:0.8em;display:inline-block;width:6em;">2021.7.23</span><span style="font-size:0.8em;">2020 TOKYO ブルーインパルス</span></a></li>
-	    </ul>
+            <li><a href="#info0001"><span style="color:#888888;font-size:0.8em;display:inline-block;width:6em;">2021.7.23 </span><span style="font-size:0.8em;">2020 TOKYO ブルーインパルス</span></a></li>
+	    </ul>@charset "utf-8";
+
+        /*============================================
+        全般的なスタイル
+        ============================================*/
+        * {
+            margin:0; padding:0; 		/*全要素のマージン・パディングをリセット*/
+        }
+        
+        body {
+              background-color:#cccccc;		      /*ページ全体の背景色*/
+              font-size:95%;                             /* フォントサイズを95%にする */
+              font-family: /*"Yu Gothic Medium",*/ "Yu Gothic", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;    /* フォントをゴシック系にする */
+              line-height:1.5;                           /* 行の高さを1.5倍にする */
+              color:#2b2b31;                           /* 文字色を任意の色にする */
+        }
+        
+        div#pagebody {
+              width:1500px; margin:0 auto;	       /*内容全体をセンタリング*/
+            background-color:#cccccc;	      /*内容全体の背景色*/
+        }
+        
+        img {border:0;} 				/*画像のボーダーを0にする*/
+        
+        p {
+            width:940px;		/*幅の指定*/
+            margin:20px 10px 0px 10px;	/*位置調整*/
+            text-indent:1em;		/*インデント幅*/
+        }
+        
+        hr {
+            clear:both;		/*フロート配置をクリアする*/
+            width:680px;		/*幅の指定*/
+            margin:10px 0px;		/*マージン*/
+            border:1px dotted #cccccc;	/*内容の区切りをグレーの点線表示にする*/
+        }
+        
+        /*============================================
+        ヘッダ
+        ============================================*/
+        div#header {
+            height:96px;				/*ヘッダ部分の高さ*/
+        }
+        div#header h1 {
+            padding:0px 0px 0px 0px;		/*見出しの位置調整*/
+            font-size:18px;				/*フォントのサイズ*/
+            font-family:Arial, Helvetica, sans-serif;	/*フォントの種類*/
+        }
+        div#header h1 a {text-decoration:none;} 	/*リンクの下線を無くす*/
+        
+        /*============================================
+        メインメニュー
+        ============================================*/
+        ul#menu {
+            width:1500px; height:50px; 	/*メインメニュー部分の幅と高さ*/
+              margin:0px 0px; 		      /*上下マージン0px、左右マージン20px*/
+        }
+        
+        #menu li {
+            list-style-type:none;	/*リストマーカー無しにする*/
+            display:inline;		/*リスト項目をインライン表示にする*/
+              float:left;			/*リスト項目を横に並べる*/
+        }
+        
+        /*#menu li +li{
+              /*border-left: 1px solid #666666;        /*ここがボーダー線指定しているところ*/ 
+              /*padding: 0 0px 0 1px;                    /*メニューとボーダー線の間の距離感 */
+        /*  }*/
+        
+        #menu li a {
+              background-color:rgb(66, 66, 66);       /*背景色*/
+            color:#c7c7c7;                          /*文字色*/
+            display:block;                            /*リンク部分をブロック表示にする*/
+            width:300px; height:35px;                 /*幅と高さ*/
+              padding:15px 0px 0px 0px;                 /*上パディング*/
+            text-align:center;                        /*テキストをセンター揃えにする*/
+            text-decoration:none;                     /*リンク部分を下線無しにする*/
+        }
+        
+        #menu li a:hover {
+            background-color:#383838; 	/*リンクにマウスが乗ったら背景色を変更する*/
+        }
+        
+        /*============================================
+        ヘッダ画像
+        ============================================*/
+        #img_index {
+            width:1500px; height:321px;	/*トップページのヘッダ画像の表示サイズを指定*/
+            margin:20px 0px 0px 0px;		/*マージン*/
+        }
+        
+        #img_subpage {
+            width:960px; height:240px;	/*トップページ以外のヘッダ画像の表示サイズを指定*/
+            margin:5px 0px;		/*マージン*/
+        }
+        
+        /*============================================
+        サブメニュー（左カラム）
+        ============================================*/
+        h2 {
+            width:160px; height:30px;		/*幅と高さ*/
+            padding:10px 0px 1px 100px;		/*パディング*/
+            font-size:15px;			/*フォントサイズ*/
+            /*background-image:url(images/bg_h2.png);	背景画像*/
+            /*background-repeat:no-repeat;		背景画像を繰り返さない*/
+            background-color:rgb(66, 66, 66);		/*背景色*/
+            color:#c7c7c7;			/*文字色*/
+            border-radius:5px;			/*角丸にする*/
+        }
+        
+        div#submenu {
+            width:260px;		      /*幅の指定*/
+              margin:20px 10px 0px 0px;	/*位置調整*/
+            float:left;			      /*サブメニューのカラムを左寄せにする*/
+        }
+        
+        div#submenu ul li {
+            list-style-type:none;			/*リストマーカー無しにする*/
+        }
+        
+        div#submenu ul li a {
+            display:block;			      /*リンク部分をブロック表示にする*/
+            height:30px;			      /*高さを30pxにする*/
+            padding:5px 0px 0px 0px;    	/*パディング*/
+            text-decoration:none;		      /*リンクの下線を無くす*/
+            border-bottom:1px dotted gray;      /*リンク領域の下部にボーダーを付ける*/
+            /*background-image:url(images/bg_submenu.png);	/*リンク領域に背景画像を付ける*/
+            background-repeat:no-repeat;  	/*背景画像を繰り返さない*/
+            color:#333333;                      /*文字色*/
+        }
+        
+        div#submenu ul li:first-child a {
+            border-top:1px dotted gray;		/*一番上のリンクに上線を表示*/
+        }
+        
+        div#submenu ul li a:hover	{
+            text-decoration:underline;	/*リンクにマウスが乗ったら下線を表示*/
+        }
+        
+        div#submenu ul li a:before {
+            /*content: url("images/icon_submenu.png");	/*アイコン画像を挿入*/
+            margin:0px 3px 0px 0px;		/*マージン*/
+            vertical-align:text-top;			/*縦方向の表示位置*/
+        }
+        
+        /*============================================
+        インフォメーション（中カラム）
+        ============================================*/
+        div#info {
+            width:960px;		/*幅の指定*/
+            float:left;			/*カラムを左寄せにする*/
+              padding:0px 0px 0px 0px;		/*パディング*/
+        }
+        
+        h3 {
+            font-size:14px;			/*文字サイズ*/
+            width:730px;			/*横幅*/
+            padding:10px 0px 10px 0px;		/*パディング*/
+            background-color:rgb(66, 66, 66);		/*背景色*/
+            color:#c7c7c7;			/*文字色*/
+            border-radius:5px;			/*角丸にする*/
+            margin:0px 0px 9px 210px;
+        }
+        
+        .infoimg_index {
+            width:200px; height:133px;	/*画像の表\示サイズを指定*/
+            margin:0px 20px 20px 0px;	/*マージン*/
+            float:left;			/*画像を寄せる*/
+            filter: drop-shadow(2px 5px 4px #6b6b6b);
+        }
+        
+        .infoimg_gallery {
+            width:680px; height:453px;	/*画像の表示サイズを指定*/
+            padding:20px 0px 10px 20px;		/*パディング*/
+            margin:-10px;	/*マージン*/
+            float:right;			/*画像を右寄せにする*/
+        }
+        
+        hr {
+            clear:both;			/*フロート配置をクリアする*/
+        }
+        
+        /*============================================
+        twitter（右カラム）
+        ============================================*/
+        h4 {
+            width:160px; height:30px;		/*幅と高さ*/
+            padding:0px 0px 0px 0px;		/*パディング*/
+            font-size:15px;			/*フォントサイズ*/
+            /*background-image:url(images/bg_h2.png);	背景画像*/
+            /*background-repeat:no-repeat;		背景画像を繰り返さない*/
+            background-color:rgb(66, 66, 66);		/*背景色*/
+            color:#c7c7c7;			/*文字色*/
+            border-radius:5px;			/*角丸にする*/
+        }
+        
+        div#twitter {
+            width:260px;		      /*幅の指定*/
+              margin:20px 0px 0px 0px;	/*位置調整*/
+            float:right;			      /*カラムを左寄せにする*/
+        }
+        
+        /*============================================
+        フッタ
+        ============================================*/
+        div#footer {
+            clear:both;			/*回り込みを解除する*/
+              height:40px;			/*高さの指定*/
+            padding:10px 0px 0px 0px;	/*パディング*/
+            font-size:x-small;		/*フォントサイズを小さくする*/
+            text-align:center;		/*センタリング*/
+        }
     </div>
 
     <!-- インフォメーション（右カラム） -->

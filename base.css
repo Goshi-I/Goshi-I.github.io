@@ -24,7 +24,7 @@ img {border:0;} 				/*画像のボーダーを0にする*/
 
 p {
 	width:940px;		/*幅の指定*/
-	margin:10px 10px 0px 10px;	/*位置調整*/
+	margin:20px 10px 0px 10px;	/*位置調整*/
 	text-indent:1em;		/*インデント幅*/
 }
 
@@ -86,7 +86,7 @@ ul#menu {
 ============================================*/
 #img_index {
 	width:1500px; height:321px;	/*トップページのヘッダ画像の表示サイズを指定*/
-	margin:5px 0px;		/*マージン*/
+	margin:20px 0px 0px 0px;		/*マージン*/
 }
 
 #img_subpage {
@@ -110,7 +110,7 @@ h2 {
 
 div#submenu {
 	width:260px;		      /*幅の指定*/
-      margin:0px 10px 0px 0px;	/*位置調整*/
+      margin:20px 10px 0px 0px;	/*位置調整*/
 	float:left;			      /*サブメニューのカラムを左寄せにする*/
 }
 
@@ -154,17 +154,19 @@ div#info {
 
 h3 {
 	font-size:14px;			/*文字サイズ*/
-	width:940px;			/*横幅*/
-	padding:10px 0px 10px 20px;		/*パディング*/
+	width:730px;			/*横幅*/
+	padding:10px 0px 10px 0px;		/*パディング*/
 	background-color:rgb(66, 66, 66);		/*背景色*/
 	color:#c7c7c7;			/*文字色*/
 	border-radius:5px;			/*角丸にする*/
+	margin:0px 0px 9px 210px;
 }
 
 .infoimg_index {
 	width:200px; height:133px;	/*画像の表\示サイズを指定*/
 	margin:0px 20px 20px 0px;	/*マージン*/
-	float:left;			/*画像を右寄せにする*/
+	float:left;			/*画像を寄せる*/
+	filter: drop-shadow(2px 5px 4px #6b6b6b);
 }
 
 .infoimg_gallery {
@@ -194,7 +196,7 @@ h4 {
 
 div#twitter {
 	width:260px;		      /*幅の指定*/
-      margin:0px 0px 0px 0px;	/*位置調整*/
+      margin:20px 0px 0px 0px;	/*位置調整*/
 	float:right;			      /*カラムを左寄せにする*/
 }
 

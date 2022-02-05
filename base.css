@@ -138,7 +138,7 @@ div#submenu ul li a:hover	{
 }
 
 div#submenu ul li a:before {
-	content: url("images/icon_submenu.png");	/*アイコン画像を挿入*/
+	/*content: url("images/icon_submenu.png");	/*アイコン画像を挿入*/
 	margin:0px 3px 0px 0px;		/*マージン*/
 	vertical-align:text-top;			/*縦方向の表示位置*/
 }

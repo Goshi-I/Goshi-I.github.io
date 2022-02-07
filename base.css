@@ -199,12 +199,6 @@ h4 {
 	margin:20px 0px 9px 0px;
 }
 
-.infoimg_profile {
-	width:40px; height:40px;	/*画像の表示サイズを指定*/
-	padding:20px 0px 10px 20px;		/*パディング*/
-	margin:0px;	/*マージン*/
-}
-
 /*============================================
 自己紹介とtwitter（右カラム）
 ============================================*/
@@ -212,6 +206,24 @@ div#profile{
 	width:260px;		      /*幅の指定*/
     margin:20px 0px 0px 0px;	/*位置調整*/
 	float:right;			      /*カラムを左寄せにする*/
+}
+
+.infoimg_profile {
+	width:100px; height:100px;	/*画像の表示サイズを指定*/
+	padding:50px 0px 0px 80px;		/*パディング*/
+	margin:0px;	/*マージン*/
+}
+
+.infoimg_twitter_icon{
+	width:60px; height:60px;	/*画像の表示サイズを指定*/
+	padding:50px 0px 0px 80px;		/*パディング*/
+	margin:0px;	/*マージン*/
+}
+
+.infoimg_Instagram_icon{
+	width:60px; height:60px;	/*画像の表示サイズを指定*/
+	padding:50px 0px 0px 80px;		/*パディング*/
+	margin:0px;	/*マージン*/
 }
 
 /*============================================

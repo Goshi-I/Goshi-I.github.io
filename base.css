@@ -90,8 +90,8 @@ ul#menu {
 }
 
 #img_subpage {
-	width:960px; height:240px;	/*トップページ以外のヘッダ画像の表示サイズを指定*/
-	margin:5px 0px;		/*マージン*/
+	width:1500px; height:240px;	/*トップページ以外のヘッダ画像の表示サイズを指定*/
+	margin:20px 0px 0px 0px;		/*マージン*/
 }
 
 /*============================================
@@ -183,12 +183,6 @@ hr {
 /*============================================
 インフォメーション（右カラムver）
 ============================================*/
-div#info {
-	width:960px;		/*幅の指定*/
-	float:left;			/*カラムを左寄せにする*/
-      padding:0px 0px 0px 0px;		/*パディング*/
-}
-
 h4 {
 	font-size:14px;			/*文字サイズ*/
 	width:730px;			/*横幅*/
@@ -196,27 +190,8 @@ h4 {
 	background-color:rgb(66, 66, 66);		/*背景色*/
 	color:#c7c7c7;			/*文字色*/
 	border-radius:5px;			/*角丸にする*/
-	margin:0px 0px 9px 0px;
+	margin:20px 0px 9px 0px;
 }
-
-.infoimg_index {
-	width:200px; height:133px;	/*画像の表\示サイズを指定*/
-	margin:0px 20px 20px 0px;	/*マージン*/
-	float:left;			/*画像を寄せる*/
-	filter: drop-shadow(2px 5px 4px #6b6b6b);
-}
-
-.infoimg_gallery {
-	width:680px; height:453px;	/*画像の表示サイズを指定*/
-	padding:20px 0px 10px 20px;		/*パディング*/
-	margin:-10px;	/*マージン*/
-	float:right;			/*画像を右寄せにする*/
-}
-
-hr {
-	clear:both;			/*フロート配置をクリアする*/
-}
-
 
 /*============================================
 twitter（右カラム）

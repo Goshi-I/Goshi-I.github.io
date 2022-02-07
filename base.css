@@ -8,15 +8,15 @@
 }
 
 body {
-      background-color:#cccccc;		      /*ページ全体の背景色*/
-      font-size:95%;                             /* フォントサイズを95%にする */
-      font-family: /*"Yu Gothic Medium",*/ "Yu Gothic", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;    /* フォントをゴシック系にする */
-      line-height:1.5;                           /* 行の高さを1.5倍にする */
-      color:#2b2b31;                           /* 文字色を任意の色にする */
+    background-color:#cccccc;		      /*ページ全体の背景色*/
+    font-size:95%;                             /* フォントサイズを95%にする */
+    font-family: /*"Yu Gothic Medium",*/ "Yu Gothic", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;    /* フォントをゴシック系にする */
+    line-height:1.5;                           /* 行の高さを1.5倍にする */
+    color:#2b2b31;                           /* 文字色を任意の色にする */
 }
 
 div#pagebody {
-      width:1500px; margin:0 auto;	       /*内容全体をセンタリング*/
+    width:1500px; margin:0 auto;	       /*内容全体をセンタリング*/
 	background-color:#cccccc;	      /*内容全体の背景色*/
 }
 
@@ -53,13 +53,13 @@ div#header h1 a {text-decoration:none;} 	/*リンクの下線を無くす*/
 ============================================*/
 ul#menu {
 	width:1500px; height:50px; 	/*メインメニュー部分の幅と高さ*/
-      margin:0px 0px; 		      /*上下マージン0px、左右マージン20px*/
+    margin:0px 0px; 		      /*上下マージン0px、左右マージン20px*/
 }
 
 #menu li {
 	list-style-type:none;	/*リストマーカー無しにする*/
 	display:inline;		/*リスト項目をインライン表示にする*/
-      float:left;			/*リスト項目を横に並べる*/
+    float:left;			/*リスト項目を横に並べる*/
 }
 
 /*#menu li +li{
@@ -68,11 +68,11 @@ ul#menu {
 /*  }*/
 
 #menu li a {
-      background-color:rgb(66, 66, 66);       /*背景色*/
+    background-color:rgb(66, 66, 66);       /*背景色*/
 	color:#c7c7c7;                          /*文字色*/
 	display:block;                            /*リンク部分をブロック表示にする*/
 	width:300px; height:35px;                 /*幅と高さ*/
-      padding:15px 0px 0px 0px;                 /*上パディング*/
+    padding:15px 0px 0px 0px;                 /*上パディング*/
 	text-align:center;                        /*テキストをセンター揃えにする*/
 	text-decoration:none;                     /*リンク部分を下線無しにする*/
 }
@@ -144,12 +144,12 @@ div#submenu ul li a:before {
 }
 
 /*============================================
-インフォメーション（中カラムver）
+インフォメーション（中カラム写真アリver）
 ============================================*/
 div#info_c {
 	width:960px;		/*幅の指定*/
 	float:left;			/*カラムを左寄せにする*/
-      padding:0px 0px 0px 0px;		/*パディング*/
+    padding:0px 0px 0px 0px;		/*パディング*/
 }
 
 h3 {
@@ -181,12 +181,12 @@ hr {
 }
 
 /*============================================
-インフォメーション（右カラムver）
+インフォメーション（中カラム写真ナシver）
 ============================================*/
 div#info {
 	width:960px;		/*幅の指定*/
 	float:left;			/*カラムを左寄せにする*/
-      padding:0px 0px 0px 0px;		/*パディング*/
+    padding:0px 0px 0px 90px;		/*パディング*/
 }
 
 h4 {
@@ -199,13 +199,18 @@ h4 {
 	margin:20px 0px 9px 0px;
 }
 
-/*============================================
-twitter（右カラム）
-============================================*/
+.infoimg_profile {
+	width:40px; height:40px;	/*画像の表示サイズを指定*/
+	padding:20px 0px 10px 20px;		/*パディング*/
+	margin:0px;	/*マージン*/
+}
 
-div#twitter {
+/*============================================
+自己紹介とtwitter（右カラム）
+============================================*/
+div#profile{
 	width:260px;		      /*幅の指定*/
-      margin:20px 0px 0px 0px;	/*位置調整*/
+    margin:20px 0px 0px 0px;	/*位置調整*/
 	float:right;			      /*カラムを左寄せにする*/
 }
 
@@ -214,7 +219,7 @@ div#twitter {
 ============================================*/
 div#footer {
 	clear:both;			/*回り込みを解除する*/
-      height:40px;			/*高さの指定*/
+    height:40px;			/*高さの指定*/
 	padding:10px 0px 0px 0px;	/*パディング*/
 	font-size:x-small;		/*フォントサイズを小さくする*/
 	text-align:center;		/*センタリング*/

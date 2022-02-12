@@ -29,9 +29,7 @@ p {
 }
 
 hr {
-	clear:both;		/*フロート配置をクリアする*/
-	width:680px;		/*幅の指定*/
-	margin:10px 0px;		/*マージン*/
+	clear:both;	/*マージン*/
 	border:1px dotted #cccccc;	/*内容の区切りをグレーの点線表示にする*/
 }
 

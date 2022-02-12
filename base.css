@@ -215,15 +215,15 @@ div#profile{
 }
 
 .infoimg_twitter_icon{
-	width:60px; height:60px;	/*画像の表示サイズを指定*/
-	padding:50px 0px 0px 80px;		/*パディング*/
-	margin:0px;	/*マージン*/
+	width:50px;	/*画像の表示サイズを指定*/
+	padding:50px 0px 0px 50px;		/*パディング*/
+	float:left;
 }
 
 .infoimg_Instagram_icon{
-	width:60px; height:60px;	/*画像の表示サイズを指定*/
-	padding:50px 0px 0px 80px;		/*パディング*/
-	margin:0px;	/*マージン*/
+	width:50px;	/*画像の表示サイズを指定*/
+	padding:50px 50px 50px 0px;		/*パディング*/
+	float:right
 }
 
 /*============================================

@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color:#cccccc;		      /*ページ全体の背景色*/
+    background-color:#000000;		      /*ページ全体の背景色*/
     font-size:95%;                             /* フォントサイズを95%にする */
     font-family: /*"Yu Gothic Medium",*/ "Yu Gothic", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;    /* フォントをゴシック系にする */
     line-height:1.5;                           /* 行の高さを1.5倍にする */
@@ -101,7 +101,7 @@ h2 {
 	font-size:15px;			/*フォントサイズ*/
 	/*background-image:url(images/bg_h2.png);	背景画像*/
 	/*background-repeat:no-repeat;		背景画像を繰り返さない*/
-	background-color:rgb(0, 0, 0);		/*背景色*/
+	background-color:rgb(66, 66, 66);		/*背景色*/
 	color:#c7c7c7;			/*文字色*/
 	border-radius:5px;			/*角丸にする*/
 }

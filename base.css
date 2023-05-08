@@ -101,7 +101,7 @@ h2 {
 	font-size:15px;			/*フォントサイズ*/
 	/*background-image:url(images/bg_h2.png);	背景画像*/
 	/*background-repeat:no-repeat;		背景画像を繰り返さない*/
-	background-color:rgb(66, 66, 66);		/*背景色*/
+	background-color:rgb(0, 0, 0);		/*背景色*/
 	color:#c7c7c7;			/*文字色*/
 	border-radius:5px;			/*角丸にする*/
 }

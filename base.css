@@ -17,7 +17,7 @@ body {
 
 div#pagebody {
     width:1500px; margin:0 auto;	       /*内容全体をセンタリング*/
-	background-color:#cccccc;	      /*内容全体の背景色*/
+	background-color:#000000;	      /*内容全体の背景色*/
 }
 
 img {border:0;} 				/*画像のボーダーを0にする*/

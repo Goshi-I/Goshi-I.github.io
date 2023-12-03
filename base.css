@@ -124,7 +124,7 @@ div#submenu ul li a {
 	border-bottom:1px dotted gray;      /*リンク領域の下部にボーダーを付ける*/
 	/*background-image:url(images/bg_submenu.png);	/*リンク領域に背景画像を付ける*/
 	background-repeat:no-repeat;  	/*背景画像を繰り返さない*/
-	color:#333333;                      /*文字色*/
+	color:#c7c7c7;                      /*文字色*/
 }
 
 div#submenu ul li:first-child a {
@@ -168,10 +168,10 @@ h3 {
 }
 
 .infoimg_gallery {
-	width:680px; height:453px;	/*画像の表示サイズを指定*/
-	padding:20px 0px 10px 20px;		/*パディング*/
+	width:730px; height:486px;	/*画像の表示サイズを指定*/
+	padding:20px 0px 10px 5px;		/*パディング*/
 	margin:-10px;	/*マージン*/
-	float:right;			/*画像を右寄せにする*/
+	float:left;			/*画像を右寄せにする*/
 }
 
 hr {
@@ -214,13 +214,13 @@ div#profile{
 
 .infoimg_twitter_icon{
 	width:50px;	/*画像の表示サイズを指定*/
-	padding:50px 0px 0px 50px;		/*パディング*/
+	padding:10px 0px 0px 50px;		/*パディング*/
 	float:left;
 }
 
 .infoimg_Instagram_icon{
 	width:50px;	/*画像の表示サイズを指定*/
-	padding:50px 50px 50px 0px;		/*パディング*/
+	padding:10px 50px 50px 0px;		/*パディング*/
 	float:right
 }
 

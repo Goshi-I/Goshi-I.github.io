@@ -54,7 +54,7 @@ main {
 }
 
 .split.left {
-    background-image: url('/images/your-photo-image.png');
+    background-image: url('/images/your_photo_image.png');
     background-size: cover;
     background-position: center;
 }

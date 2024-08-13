@@ -54,13 +54,13 @@ main {
 }
 
 .split.left {
-    background-image: url('your-photo-image.jpg');
+    background-image: url('/images/your-photo-image.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .split.right {
-    background-image: url('your-movie-image.jpg');
+    background-image: url('/images/your-movie-image.jpg');
     background-size: cover;
     background-position: center;
 }

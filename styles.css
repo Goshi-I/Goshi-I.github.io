@@ -216,11 +216,21 @@ footer {
         height: 50vh; /* 高さを調整 */
     }
 
-    .gallery {
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* グリッドのサイズを小さく */
+    /* スマホではアニメーションを無効化し、文字を常時表示 */
+    .overlay {
+        color: #fff; /* テキストを常に白で表示 */
+        background-color: rgba(0, 0, 0, 0.5); /* 背景を半透明の黒に */
     }
 
-    .overlay {
+    .overlay::before {
+        content: none; /* 背景アニメーションを無効化 */
+    }
+
+    .overlay:hover::before {
+        transform: none; /* ホバー時の背景変更を無効化 */
+    }
+
+    .text {
         font-size: 24px; /* テキストサイズを調整 */
     }
 

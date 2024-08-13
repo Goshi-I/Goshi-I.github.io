@@ -199,7 +199,7 @@ footer {
     }
 
     .menu-btn {
-        display: block;
+        display: block; /* スマホ表示時にボタンを表示 */
         background-color: #333;
         color: #fff;
         border: none;
@@ -292,5 +292,12 @@ footer {
 
     .equipment {
         margin-bottom: 20px;
+    }
+}
+
+/* PC表示用の修正 */
+@media (min-width: 769px) {
+    .menu-btn {
+        display: none; /* PC表示時にボタンを非表示 */
     }
 }

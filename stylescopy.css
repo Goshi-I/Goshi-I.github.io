@@ -50,13 +50,13 @@ main {
 }
 
 .left {
-    background-image: url('your-photo-image.jpg');
+    background-image: url('/images/your_photo_image.png');
     background-size: cover;
     background-position: center;
 }
 
 .right {
-    background-image: url('your-movie-image.jpg');
+    background-image: url('/images/your-movie-image.png');
     background-size: cover;
     background-position: center;
 }

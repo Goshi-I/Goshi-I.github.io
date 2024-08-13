@@ -188,3 +188,54 @@ footer {
     text-decoration: none;
     cursor: pointer;
 }
+
+/* 既存のCSSはそのまま使用します */
+
+/* メディアクエリを追加して、スマホ表示に対応させます */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        flex-direction: column;
+        height: auto; /* 高さを自動調整 */
+    }
+
+    .split {
+        width: 100%;
+        height: 50vh; /* 高さを調整 */
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* グリッドのサイズを小さく */
+    }
+
+    .overlay {
+        font-size: 24px; /* テキストサイズを調整 */
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .equipment-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .equipment {
+        margin-bottom: 20px;
+    }
+}
+

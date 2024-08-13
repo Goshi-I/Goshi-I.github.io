@@ -1,94 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="table.css">
-    <title>ギャラリー | iTAP</title>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KXSXBWB229"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-KXSXBWB229');
-    </script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Works - Your Company Name</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 </head>
 <body>
-<div id="pagebody">
-
-    <!-- ヘッダ -->
-    <div id="header">
-    <h1><a href="index.html"><img src="images/logo.png" alt="iTAP"></a></h1>
-    </div>
-
-    <!-- メインメニュー -->
-    <ul id="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="blog.html">Works</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="profile.html">Profile</a></li>
-        </ul>
-
-    <!-- ヘッダ画像 -->
-    <div id="img_subpage">
-	<img src="./images/img_profile.png" alt="画像が正しく表示されていません。設定をご確認ください。">
-    </div>
-
-    <!-- サブメニュー（左カラム） -->
-	<div id="submenu">
-	    <h2>ギャラリー</h2>
-	    <ul>
-		    <li><a href="#info0002">映像作品</a></li>
-            <li><a href="#info0001">写真作品</a></li>
-	    </ul>
-    </div>
-
-    <!-- インフォメーション（右カラム） -->
-	<div id="info">
-            <!-- <h4 id="info0002">映像作品</h4>  -->
-
-            <h4 id="info0001">写真作品</h4>
-                <p>
-                <img src="images/gallery0005.jpg" alt="画像" class="infoimg_gallery">
-                </p>
-
-                <p>
-                <img src="images/gallery0004.jpg" alt="画像" class="infoimg_gallery">
-                </p>
-
-                <p>
-                <img src="images/gallery0006.jpg" alt="縦画像" class="infoimg_gallery_vertical">
-                </p>
-    
-                <p>
-                <img src="images/gallery0007.jpg" alt="画像" class="infoimg_gallery">
-                </p>
-
-                <p>
-                <img src="images/gallery0001.png" alt="画像" class="infoimg_gallery">
-                </p>
-
-                <p>
-                <img src="images/gallery0002.png" alt="画像" class="infoimg_gallery">
-                </p>
-
-                <p>
-                <img src="images/gallery0008.jpg" alt="画像" class="infoimg_gallery_vertical">
-                </p>
-
-                <p>
-                <img src="images/gallery0003.png" alt="画像" class="infoimg_gallery">
-                </p>
-    </div>
-
-    <!-- フッタ -->     
-    <div id="footer"><small>Copyright (c) 2023 iTAP All Rights Reserved.</small></div>
-            
-</div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Photo Works</a></li>
+                <li><a href="#">Movie Works</a></li>
+                <li><a href="#">Price</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="gallery">
+            <a href="photo1-large.jpg" data-lightbox="photo-works"><img src="images/gallery0001.png" alt="Photo 1"></a>
+            <a href="photo2-large.jpg" data-lightbox="photo-works"><img src="images/gallery0002.png" alt="Photo 2"></a>
+            <a href="photo3-large.jpg" data-lightbox="photo-works"><img src="images/gallery0003.png" alt="Photo 3"></a>
+            <!-- Add more photos as needed -->
+        </section>
+    </main>
+    <footer>
+        <div class="equipment-list">
+            <div class="equipment">
+                <h3>ボディ</h3>
+                <p>Z9 Z8 Z6</p>
+            </div>
+            <div class="equipment">
+                <h3>レンズ</h3>
+                <p>24-70/4 70-200/2.8 50/1.2</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </body>
 </html>

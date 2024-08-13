@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "游明朝", "Yu Mincho", serif;
     background-color: #000;
     color: #fff;
     height: 100vh;
@@ -39,24 +39,28 @@ nav ul li a:hover {
 }
 
 main {
+    padding: 20px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: calc(100vh - 60px); /* Adjusts for header height */
 }
 
+/* Home specific styles */
 .split {
     width: 50%;
     position: relative;
     overflow: hidden;
 }
 
-.left {
-    background-image: url('/images/image.png');
+.split.left {
+    background-image: url('your-photo-image.jpg');
     background-size: cover;
     background-position: center;
 }
 
-.right {
-    background-image: url('/images/image.png');
+.split.right {
+    background-image: url('your-movie-image.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -83,4 +87,50 @@ main {
 .text {
     font-size: 36px;
     font-weight: bold;
+}
+
+/* Photo Works specific styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.equipment-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.equipment {
+    text-align: center;
+}
+
+.equipment h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.equipment p {
+    font-size: 18px;
 }

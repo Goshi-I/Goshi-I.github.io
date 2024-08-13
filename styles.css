@@ -53,8 +53,8 @@ main {
     overflow: hidden;
 }
 
-.left {
-    background-image: url('/images/your-photo-image.jpg');
+.split.left {
+    background-image: url('/images/your-photo-image.png');
     background-size: cover;
     background-position: center;
 }

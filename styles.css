@@ -60,7 +60,7 @@ main {
 }
 
 .split.right {
-    background-image: url('/images/your-movie-image.jpg');
+    background-image: url('/images/your-movie-image.png');
     background-size: cover;
     background-position: center;
 }

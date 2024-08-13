@@ -1,90 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="base.css">
-    <title>フォトグラファー | iTAP</title>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KXSXBWB229"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-KXSXBWB229');
-    </script>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#000000">
-    <meta name="theme-color" content="#ffffff">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ホーム - Your Company Name</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div id="pagebody">
-
-    <!-- ヘッダ -->
-    <div id="header">
-    <h1><a href="index.html"><img src="images/logo.png" alt="iTAP"></a></h1>
-    </div>
-
-    <!-- メインメニュー -->
-    <ul id="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="blog.html">Works</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="profile.html">Profile</a></li>
-        </ul>
-
-    <!-- ヘッダ画像 -->
-    <div id="img_index">
-	<img src="./images/img_index.png" alt="画像が正しく表示されていません。設定をご確認ください。" width="1500" height="321">
-    </div>
-
-    <!-- サブメニュー（左カラム） -->
-	<div id="submenu">
-	    <h2>新着情報</h2>
-	    <ul>
-		    <li><a href="#info0002"><span style="color:#888888;font-size:0.8em;display:inline-block;width:6em;">2021.11.29</span><span style="font-size:0.8em;">2021 SUPER GT Rd.8 富士ス…</span></a></li>
-            <li><a href="#info0001"><span style="color:#888888;font-size:0.8em;display:inline-block;width:6em;">2021.7.23 </span><span style="font-size:0.8em;">2020 TOKYO ブルーインパルス</span></a></li>
-	    </ul>
-    </div>
-
-    <!-- インフォメーション（中カラム） -->
-	<div id="info_c">
-            <p>
-            <img src="images/index0002.png" alt="CALSONIC" class="infoimg_index">
-            <h3 id="info0002">2021 SUPER GT Rd.8 富士スピードウェイ</h3>
-                2021年11月27/28日に富士スピードウェイで開催された、「2021 AUTOBACS SUPER GT ROUND8 FUJIMAKI GROUP FUJI GT300KM RACE」の撮影に行ってまいりました。
-                狙ったのは、個人的に推しているCALSONIC（GT500）とグッドスマイルレーシング（GT300）。特にCALSONIC含むGT-R勢はラストランだったので、撮り納しました。
-            </p>
-            <hr>
-
-            <p>
-            <img src="images/index0001.png" alt="2020TOKYO" class="infoimg_index">
-            <h3 id="info0001">2020 TOKYO ブルーインパルス</h3>
-                2021年7月23日の2020東京オリンピック開会式の日に合わせて、航空自衛隊のアクロバット飛行チーム「ブルーインパルス」がスモークを使った飛行を行いました。
-                五輪マークを描くのは57年ぶりで、生きている間に見れるのは最後かもということで、東京タワー周辺で撮影をしてきました。
-            </p>
-            <hr>
-    </div>
-
-    <!-- Twitter（右カラム） -->
-	<div id="profile">
-        <img src="images/icon_400x400.png" alt="icon" class="infoimg_profile">
-        <center>iT4P</center>
-        <img src="images/x.png" alt="twitter" class="infoimg_twitter_icon">
-        <img src="images/Instagram.png" alt="twitter" class="infoimg_Instagram_icon">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Photo Works</a></li>
+                <li><a href="#">Movie Works</a></li>
+                <li><a href="#">Price</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="split left">
+            <a href="#" class="overlay">
+                <div class="text">Photo Works</div>
+            </a>
         </div>
-
-    <!-- フッタ -->     
-    <div id="footer"><small>Copyright (c) 2023 iTAP All Rights Reserved.</small></div>
-            
-</div>
+        <div class="split right">
+            <a href="#" class="overlay">
+                <div class="text">Movie Works</div>
+            </a>
+        </div>
+    </main>
 </body>
 </html>

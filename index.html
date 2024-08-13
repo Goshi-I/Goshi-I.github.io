@@ -9,7 +9,8 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <button class="menu-btn" onclick="toggleMenu()">Menu</button>
+            <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="photo-works.html">Photo Works</a></li>
                 <li><a href="#">Movie Works</a></li>
@@ -31,5 +32,11 @@
             </a>
         </div>
     </main>
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.nav-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

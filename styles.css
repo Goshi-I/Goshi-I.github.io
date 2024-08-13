@@ -191,19 +191,48 @@ footer {
 
 /* 既存のCSSはそのまま使用します */
 
-/* メディアクエリを追加して、スマホ表示に対応させます */
+/* スマホ表示用の修正 */
 @media (max-width: 768px) {
     header {
+        position: relative;
         padding: 10px;
     }
 
+    .menu-btn {
+        display: block;
+        background-color: #111;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        font-size: 18px;
+        cursor: pointer;
+        text-align: center;
+        width: 100%;
+    }
+
     nav ul {
+        display: none; /* 初期状態ではメニューを非表示 */
         flex-direction: column;
         align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #111;
+    }
+
+    nav ul.active {
+        display: flex; /* メニューがアクティブ状態のときに表示 */
     }
 
     nav ul li {
         margin: 10px 0;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
     }
 
     main {
@@ -216,7 +245,6 @@ footer {
         height: 50vh; /* 高さを調整 */
     }
 
-    /* スマホではアニメーションを無効化し、文字を常時表示 */
     .overlay {
         color: #fff; /* テキストを常に白で表示 */
         background-color: rgba(0, 0, 0, 0.5); /* 背景を半透明の黒に */
@@ -248,4 +276,3 @@ footer {
         margin-bottom: 20px;
     }
 }
-

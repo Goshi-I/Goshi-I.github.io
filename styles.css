@@ -80,7 +80,7 @@ nav ul li a:hover .logo {
 /* X Icon Styles */
 .x-icon {
     position: absolute;
-    right: 15px; /* Position it at the right end */
+    right: 20px; /* Position it at the right end */
     top: 3.5%;
     transform: translateY(-50%);
     display: flex;

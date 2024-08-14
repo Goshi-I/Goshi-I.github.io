@@ -47,7 +47,7 @@ main {
 /* Logo in the header */
 .logo {
     height: auto; /* Maintain the aspect ratio */
-    max-height: 60px; /* Adjust the maximum height to fit within the header */
+    max-height: 30px; /* Adjust the maximum height to fit within the header */
     width: auto; /* Maintain the aspect ratio */
     vertical-align: middle;
 }

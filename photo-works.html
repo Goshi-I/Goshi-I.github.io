@@ -3,39 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - iT4P studio</title>
+    <title>Photo Works - Your Company Name</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 </head>
 <body>
     <header>
-      <nav>
-        <ul>
-            <li>
-                <a href="index.html">
-                    <img src="images/logo_W.png" alt="Logo" class="logo">
-                    <img src="images/logo_B.png" alt="Logo" class="logo-hover">
-                </a>
-            </li>
-            <li><a href="photo-works.html">Photo Works</a></li>
-            <li><a href="movie-works.html">Movie Works</a></li>
-            <li><a href="#">Price</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <a href="https://x.com/it4p_studio" target="_blank" class="x-icon">
-            <img src="images/x.png" alt="X Icon">
-        </a>
-    </nav>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="images/logo_W.png" alt="Logo" class="logo">
+                        <img src="images/logo_B.png" alt="Logo" class="logo-hover">
+                    </a>
+                </li>
+                <li><a href="photo-works.html">Photo Works</a></li>
+                <li><a href="movie-works.html">Movie Works</a></li>
+                <li><a href="#">Price</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <section class="contact-section">
-            <h1>Contact Us</h1>
-            <div class="contact-info">
-                <p><strong>Mail:</strong> <a href="mailto:goshi.itahara@it4pstudio.com">goshi.itahara@it4pstudio.com</a></p>
-                <p><strong>Phone:</strong> <a href="tel:+819099630054">090-9963-0054</a></p>
-                <p><strong>代表:</strong> 板原豪士</p>
-            </div>
+    <main class="photo-works-container">
+        <section class="gallery">
+            <a href="images/gallery0001-highres.png" data-lightbox="photo-works">
+                <img src="images/gallery0001-lowres.png" alt="Photo 1" loading="lazy">
+            </a>
+            <a href="images/gallery0002-highres.png" data-lightbox="photo-works">
+                <img src="images/gallery0002-lowres.png" alt="Photo 2" loading="lazy">
+            </a>
+            <a href="images/gallery0003-highres.png" data-lightbox="photo-works">
+                <img src="images/gallery0003-lowres.png" alt="Photo 3" loading="lazy">
+            </a>
+        </section>
+        <section class="event-list">
+            <h2>Events</h2>
+            <ul>
+                <li><a href="#">東京マラソン</a></li>
+                <li><a href="#">青梅マラソン</a></li>
+                <li><a href="#">SPARTAN RACE</a></li>
+                <li><a href="#">他 全国のマラソン</a></li> 
+                <li><a href="#">UNIDOL</a></li>
+                <li><a href="#">UNIKP</a></li>
+                <li><a href="#">世田谷区空手道選手権大会</a></li>
+                <li><a href="#">中学校総合体育大会 バレー・バスケ・ハンドボール・軟式野球（全国）</a></li>
+                <li><a href="#">高等学校総合体育大会 バレー・バスケ（全国）</a></li>
+                <li><a href="#">各種スクール（幼・保・小・中・高・大学）イベント・証明写真</a></li>
+                <li><a href="#">ジャビットカップチャンピオン大会</a></li>
+                <li><a href="#">各種式典</a></li>
+                <li><a href="#">広告写真</a></li>
+                <li><a href="#">モータースポーツ</a></li>
+                <li><a href="#">ウィンタースポーツ</a></li>
+            </ul>
         </section>
     </main>
+    
+    <!-- モーダルウィンドウ -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <script>
+        function openModal(element) {
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("img01");
+            modal.style.display = "block";
+            modalImg.src = element.src.replace("-lowres", "-highres");
+        }
+
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+    </script>
 </body>
 </html>

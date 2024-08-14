@@ -22,9 +22,15 @@
     </header>
     <main class="photo-works-container">
         <section class="gallery">
-            <a href="images/gallery0001.png" data-lightbox="photo-works"><img src="images/gallery0001.png" alt="Photo 1"></a>
-            <a href="images/gallery0002.png" data-lightbox="photo-works"><img src="images/gallery0002.png" alt="Photo 2"></a>
-            <a href="images/gallery0003.png" data-lightbox="photo-works"><img src="images/gallery0003.png" alt="Photo 3"></a>
+            <a href="images/gallery0001-highres.png" data-lightbox="photo-works">
+                <img src="images/gallery0001-lowres.png" alt="Photo 1" loading="lazy">
+            </a>
+            <a href="images/gallery0002-highres.png" data-lightbox="photo-works">
+                <img src="images/gallery0002-lowres.png" alt="Photo 2" loading="lazy">
+            </a>
+            <a href="images/gallery0003-highres.png" data-lightbox="photo-works">
+                <img src="images/gallery0003-lowres.png" alt="Photo 3" loading="lazy">
+            </a>
         </section>
         <section class="event-list">
             <h2>イベント一覧</h2>
@@ -60,7 +66,7 @@
             var modal = document.getElementById("myModal");
             var modalImg = document.getElementById("img01");
             modal.style.display = "block";
-            modalImg.src = element.src.replace("thumbnail", "large");
+            modalImg.src = element.src.replace("-lowres", "-highres");
         }
 
         function closeModal() {

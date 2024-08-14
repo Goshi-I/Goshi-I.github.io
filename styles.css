@@ -44,6 +44,18 @@ main {
     height: calc(100vh - 60px); /* Adjusts for header height */
 }
 
+/* Logo in the header */
+.logo {
+    height: 40px; /* Adjust the size of the logo */
+    vertical-align: middle;
+    margin-right: 20px; /* Space between the logo and the next item */
+}
+
+/* Adjusted spacing between header elements */
+nav ul li {
+    margin: 0 25px; /* Increased margin for more spacing */
+}
+
 /* Home specific styles */
 .split {
     width: 50%;

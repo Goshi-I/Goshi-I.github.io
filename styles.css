@@ -185,7 +185,7 @@ header {
 
 /* Event list styles (right side) */
 .event-list {
-    font-family: 'Avenir Next',sans-serif;
+    font-family: YuGothic,'Yu Gothic',sans-serif;
     width: 35%;
     padding-left: 20px;
     font-weight: 200;

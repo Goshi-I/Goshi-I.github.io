@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Works - iT4P studio</title>
+    <title>Photo Works - Your Company Name</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 </head>
@@ -11,7 +11,7 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html"><img src="images/logo.png" alt="Your Company Logo" class="logo"></a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="photo-works.html">Photo Works</a></li>
                 <li><a href="#">Movie Works</a></li>
                 <li><a href="#">Price</a></li>
@@ -20,11 +20,20 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="photo-works-container">
         <section class="gallery">
             <a href="images/gallery0001.png" data-lightbox="photo-works"><img src="images/gallery0001.png" alt="Photo 1"></a>
             <a href="images/gallery0002.png" data-lightbox="photo-works"><img src="images/gallery0002.png" alt="Photo 2"></a>
             <a href="images/gallery0003.png" data-lightbox="photo-works"><img src="images/gallery0003.png" alt="Photo 3"></a>
+        </section>
+        <section class="event-list">
+            <h2>イベント一覧</h2>
+            <ul>
+                <li><a href="#">イベント 1</a></li>
+                <li><a href="#">イベント 2</a></li>
+                <li><a href="#">イベント 3</a></li>
+                <!-- Add more events as needed -->
+            </ul>
         </section>
     </main>
     <footer>
@@ -39,7 +48,7 @@
             </div>
         </div>
     </footer>
-
+    
     <!-- モーダルウィンドウ -->
     <div id="myModal" class="modal">
         <span class="close" onclick="closeModal()">&times;</span>
@@ -51,7 +60,7 @@
             var modal = document.getElementById("myModal");
             var modalImg = document.getElementById("img01");
             modal.style.display = "block";
-            modalImg.src = element.src.replace("thumbnail", "large");  // 大きい画像に切り替え
+            modalImg.src = element.src.replace("thumbnail", "large");
         }
 
         function closeModal() {

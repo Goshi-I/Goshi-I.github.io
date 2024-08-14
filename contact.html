@@ -1,129 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-    <meta charset="shift_jis">
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="table.css">
-    <link rel="stylesheet" href="form.css">
-    <title>お問合せ | iT4P</title>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KXSXBWB229"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-KXSXBWB229');
-    </script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - iT4P studio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div id="pagebody">
+    <header>
+      <nav>
+        <ul>
+            <li>
+                <a href="index.html">
+                    <img src="images/logo_W.png" alt="Logo" class="logo">
+                    <img src="images/logo_B.png" alt="Logo" class="logo-hover">
+                </a>
+            </li>
+            <li><a href="photo-works.html">Photo Works</a></li>
+            <li><a href="movie-works.html">Movie Works</a></li>
+            <li><a href="#">Price</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <a href="https://x.com/it4p_studio" target="_blank" class="x-icon">
+            <img src="images/x.png" alt="X Icon">
+        </a>
+    </nav>
+    </header>
 
-    <!-- ヘッダ -->
-    <div id="header">
-    <h1><a href="index.html"><img src="images/logo.png" alt="iTAP"></a></h1>
-    </div>
-
-    <!-- メインメニュー -->
-    <ul id="menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="blog.html">Works</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="profile.html">Profile</a></li>
-      </ul>
-
-    <!-- ヘッダ画像 -->
-    <div id="img_subpage">
-	<img src="./images/img_contact.png" alt="画像が正しく表示されていません。設定をご確認ください。">
-    </div>
-
-    <!-- サブメニュー（左カラム） -->
-	<div id="submenu">
-	    <h2>お問合せ</h2>
-	    <ul>
-		    <li><a href="#info0002">フォームからのお問合せ</a></li>
-            <li><a href="#info0001">メールでのお問合せ</a></li>
-	    </ul>
-    </div>
-
-    <!-- インフォメーション（右カラム） -->
-	<div id="info">
-    <!--
-            <h4 id="info0002">フォームからのお問合せ</h4>
-
-            <form action="https://ssl.form-mailer.jp/fm/service/Forms/confirm" method="post" name="form1" ENCTYPE="multipart/form-data" accept-charset="UTF-8">
-                <input type="hidden" name="key" value="f211aa38730274">
-          
-                *は必須項目です-->
-          
-          
-                <!-- radio --><!--
-                <p>
-                  *お問合せ区分
-                </p>
-                <p>
-                  <input name="field_6315126" type="radio" value="0">サイト内容に関するお問合せ
-                  <input name="field_6315126" type="radio" value="1">機材・撮影に関するお問合せ
-                  <input name="field_6315126" type="radio" value="2">その他のお問合せ
-                </p>-->
-              
-                <!-- text --><!--
-                <p>
-                  *お名前
-                </p>
-                <p>
-                  <input name="field_6315124" type="text" value="" size="30" maxlength="20">
-                </p>-->
-          
-                <!-- email --><!--
-                <p>
-                  *メールアドレス
-                </p>
-                <p>
-                  <input name="field_6315118" type="text" size="30">
-                </p>-->
-          
-                <!-- textarea --><!--
-                <p>
-                  *お問合せの内容
-                </p>
-                <p>
-                  <textarea name="field_6315125" cols="30" rows="5"></textarea>
-                </p>--><!--
-          
-          
-          
-          
-          
-          
-                <p>
-                  <input name="submit" type="submit" value="確認画面へ">
-                </p>
-          
-                <p>
-                  <a href="https://www.form-mailer.jp/?utm_source=https://ssl.form-mailer.jp/fms/f211aa38730274&utm_medium=ownedmedia&utm_campaign=powered-by-formmailer" target="_blank" id="powered">Powered by FormMailer.</a>
-                </p>
-          
-                <input type="hidden" name="code" value="utf8">
-              </form> -->
-    
-
-                <hr>
-
-            <h4 id="info0001">メールでのお問合せ</h4>
-            <p>
-                itapmovie@gmail.com までメールをお送りください。
-            </p>
-
-                <hr>
-    </div>
-
-    <!-- フッタ -->     
-    <div id="footer"><small>Copyright (c) 2023 iTAP All Rights Reserved.</small></div>
-            
-</div>
+    <main class="contact-page">
+        <h1>Contact Us</h1>
+        <form action="/submit_form" method="post" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Send</button>
+        </form>
+    </main>
 </body>
 </html>

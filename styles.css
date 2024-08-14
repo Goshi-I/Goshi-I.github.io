@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Avenir Next',sans-serif;
+    font-family: 'Avenir Next', sans-serif;
     background-color: #000;
     color: #fff;
     height: 100vh;
@@ -21,21 +21,25 @@ nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding-left: 10px;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 25px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
-    transition: color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 10px;
 }
 
 nav ul li a:hover {
-    color: #bbb;
+    background-color: #fff;
+    color: #000;
 }
 
 main {
@@ -52,37 +56,7 @@ main {
     vertical-align: top;
 }
 
-/* Adjusted spacing and alignment for header elements */
-nav ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center; /* Vertically align items in the middle */
-    padding-left: 10px; /* Add padding to create some space on the left */
-}
-
-nav ul li {
-    margin: 0 25px; /* Increase spacing between items */
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #bbb;
-}
-
-/* Adjust header height to accommodate the larger logo */
-header {
-    background-color: #111;
-    padding: 10px 0; /* Adjust the padding for a balanced look */
-    text-align: center;
-}
-
-/* Mobile Menu Styles (already existing) */
+/* Mobile Menu Styles */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -93,6 +67,42 @@ header {
 
     nav ul li {
         margin: 10px 0;
+    }
+
+    .split {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .overlay {
+        color: #fff; /* テキストを常に白で表示 */
+        background-color: rgba(0, 0, 0, 0.5); /* 背景を半透明の黒に */
+    }
+
+    .overlay::before {
+        content: none; /* 背景アニメーションを無効化 */
+    }
+
+    .overlay:hover::before {
+        transform: none; /* ホバー時の背景変更を無効化 */
+    }
+
+    .text {
+        font-size: 24px; /* テキストサイズを調整 */
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .equipment-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .equipment {
+        margin-bottom: 20px;
     }
 }
 
@@ -349,54 +359,45 @@ footer {
     }
 
     .nav-menu li a:hover {
-        background-color: #333;
+        background-color: #444;
     }
 
-    main {
-        flex-direction: column;
-        height: auto; /* 高さを自動調整 */
-    }
-
-    .split {
-        width: 100%;
-        height: 50vh; /* 高さを調整 */
+    .home-content {
+        text-align: center;
+        padding-top: 20px;
     }
 
     .overlay {
-        color: #fff; /* テキストを常に白で表示 */
-        background-color: rgba(0, 0, 0, 0.5); /* 背景を半透明の黒に */
+        font-size: 28px; /* ホバー時のフォントサイズを少し小さくする */
     }
 
-    .overlay::before {
-        content: none; /* 背景アニメーションを無効化 */
+    .home .split {
+        width: 100%;
+        height: 50%; /* 高さを調整して左右に並べない */
     }
 
-    .overlay:hover::before {
-        transform: none; /* ホバー時の背景変更を無効化 */
+    .split.left, .split.right {
+        background-size: cover;
     }
 
-    .text {
-        font-size: 24px; /* テキストサイズを調整 */
+    main {
+        flex-direction: column; /* 縦並びに変更 */
     }
 
-    footer {
-        flex-direction: column;
-        text-align: center;
+    .home-content .overlay {
+        font-size: 24px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* スマホでは2列に変更 */
     }
 
     .equipment-list {
         flex-direction: column;
-        align-items: flex-start;
+        text-align: center;
     }
 
-    .equipment {
-        margin-bottom: 20px;
-    }
-}
-
-/* PC表示用の修正 */
-@media (min-width: 769px) {
-    .menu-btn {
-        display: none; /* PC表示時にボタンを非表示 */
+    footer {
+        padding: 10px;
     }
 }

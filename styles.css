@@ -46,14 +46,55 @@ main {
 
 /* Logo in the header */
 .logo {
-    height: 40px; /* Adjust the size of the logo */
+    height: auto; /* Maintain the aspect ratio */
+    max-height: 60px; /* Adjust the maximum height to fit within the header */
+    width: auto; /* Maintain the aspect ratio */
     vertical-align: middle;
-    margin-right: 20px; /* Space between the logo and the next item */
 }
 
-/* Adjusted spacing between header elements */
+/* Adjusted spacing and alignment for header elements */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center; /* Vertically align items in the middle */
+    padding-left: 10px; /* Add padding to create some space on the left */
+}
+
 nav ul li {
-    margin: 0 25px; /* Increased margin for more spacing */
+    margin: 0 25px; /* Increase spacing between items */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #bbb;
+}
+
+/* Adjust header height to accommodate the larger logo */
+header {
+    background-color: #111;
+    padding: 10px 0; /* Adjust the padding for a balanced look */
+    text-align: center;
+}
+
+/* Mobile Menu Styles (already existing) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 20px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
 }
 
 /* Home specific styles */

@@ -340,7 +340,21 @@ footer {
     cursor: pointer;
 }
 
-/* 既存のCSSはそのまま使用します */
+/* Contactのスタイル */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact-section {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
 
 /* スマホ表示用の修正 */
 @media (max-width: 768px) {
@@ -443,3 +457,4 @@ footer {
         padding: 10px;
     }
 }
+

@@ -458,3 +458,31 @@ a {
     }
 }
 
+.profile-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.profile-section h1 {
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.profile-list {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 200;
+    color: #ccc;
+}
+
+.profile-list li {
+    margin: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.profile-list li:hover {
+    color: #fff;
+}

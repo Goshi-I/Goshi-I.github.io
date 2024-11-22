@@ -17,6 +17,14 @@ header {
     text-align: center;
 }
 
+.menu-btn {
+    display: none;
+}
+
+.nav-menu {
+    display: none;
+}
+
 nav ul {
     list-style-type: none;
     display: flex;
@@ -412,50 +420,57 @@ profile-list-sns li {
         flex-direction: column; /* Stack sections vertically */
         height: auto; /* Allow scrolling */
     }
-/*
+
     header {
         display: none;
     }
-*/
+
     .menu-btn {
         display: block;
         position: fixed;
         top: 10px;
         left: 10px;
-        background-color: #111;
+        background-color: #000000;
         color: #fff;
         border: none;
-        padding: 10px 15px;
+        padding: 5px 10px;
         font-size: 20px;
         cursor: pointer;
         border-radius: 5px;
-        z-index: 1000; /* Make sure it stays on top */
+        z-index: 1000; /* 他の要素の上に表示 */
     }
 
     .menu-btn:hover {
-        background-color: #222;
+        background-color: #000000;
     }
 
     .nav-menu {
-        display: none; /* Initially hidden */
+        display: none;
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        background-color: #111;
-        padding: 20px;
+        background-color: #000000;
+        padding: 40px 0px 0px 0px;
         z-index: 999;
         flex-direction: column;
         align-items: flex-start;
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: opacity 0.3s ease, transform 0.3s ease; /* トランジションを追加 */
     }
-
+    
     .nav-menu.active {
         display: flex; /* Show menu when active */
+        opacity: 1;
+        transform: translateY(0); /* 下からスライドイン */
     }
 
     .nav-menu ul {
-        flex-direction: column;
-        padding-left: 0;
+        list-style: none;
+        width: 100%;
+        margin: 0;
+        padding: 10px 20px;
     }
 
     .nav-menu ul li {
@@ -466,5 +481,10 @@ profile-list-sns li {
         top: 20px;
         right: 20px;
         transform: none;
+    }
+
+    main {
+        padding: 60px 0px 0px 0px;
+        display: flex;
     }
 }

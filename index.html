@@ -27,6 +27,23 @@
             </a>
         </nav>
     </header>
+
+    <!-- メニューボタン -->
+    <button class="menu-btn">
+        <img src="/images/menu-btn.png" alt="Button Image" style="height: 30px">
+    </button>
+
+    <!-- ナビゲーションメニュー -->
+    <div class="nav-menu">
+        <ul>
+            <li><a href="photo-works.html">Photo Works</a></li>
+            <li><a href="movie-works.html">Movie Works</a></li>
+            <li><a href="price.html">Price</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
     <main>
         <div class="split left">
             <a href="photo-works.html" class="overlay">
@@ -39,5 +56,24 @@
             </a>
         </div>
     </main>
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.querySelector('.menu-btn');
+            const navMenu = document.querySelector('.nav-menu');
+
+            // メニューボタンのクリックイベントを設定
+            menuBtn.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+
+            // 背景クリックでメニューを閉じる
+            document.addEventListener('click', (event) => {
+                if (!navMenu.contains(event.target) && !menuBtn.contains(event.target)) {
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

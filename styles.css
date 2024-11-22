@@ -43,7 +43,7 @@ nav ul li a:hover {
 }
 
 main {
-    padding: 20px;
+    padding: 0px;
     display: flex;
     height: calc(100vh - 60px); /* Adjusts for header height */
 }
@@ -156,13 +156,13 @@ nav ul li a:hover .logo {
 }
 
 .split.left {
-    background-image: url('/images/your_photo_image.png');
+    background-image: url('/images/your_photo_image.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .split.right {
-    background-image: url('/images/your-movie-image.png');
+    background-image: url('/images/your-movie-image.jpg');
     background-size: cover;
     background-position: center;
 }

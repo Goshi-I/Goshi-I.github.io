@@ -374,7 +374,7 @@ a {
     transition: color 0.3s ease;
 }
 
-profile-list-sns li {
+.profile-list-sns li {
     margin: 10px 0;
     transition: color 0.3s ease;
 }

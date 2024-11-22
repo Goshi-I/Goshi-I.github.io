@@ -30,7 +30,7 @@
 
     <!-- メニューボタン -->
     <button class="menu-btn">
-        <img src="/images/menu-btn.png" alt="Button Image" style="height: 30px">
+        <img id="image" src="/images/menu-btn.png" alt="Button Image" style="height: 30px">
     </button>
 
     <!-- ナビゲーションメニュー -->
@@ -48,16 +48,61 @@
         document.addEventListener('DOMContentLoaded', () => {
             const menuBtn = document.querySelector('.menu-btn');
             const navMenu = document.querySelector('.nav-menu');
+            const image = document.getElementById('image');
+            judge = 0;
 
             // メニューボタンのクリックイベントを設定
             menuBtn.addEventListener('click', () => {
                 navMenu.classList.toggle('active');
+                if (judge == 0) {
+                    image.animate(
+                        // 途中の状態を表す配列
+                        [
+                            { transform: 'rotate(0deg)'}, // 開始時の状態
+                            { transform: 'rotate(90deg)' } // 終了時の状態
+                        ], 
+                        // タイミングに関する設定
+                        {
+                        fill: 'forwards', // 再生前後の状態（再生前、開始時の状態を適用）
+                        duration: 100, // 再生時間（1000ミリ秒）
+                        },
+                    )
+                    judge = 1;
+                } else {
+                    result = 'NOT positive';
+                
+                    image.animate(
+                        // 途中の状態を表す配列
+                        [
+                            { transform: 'rotate(90deg)'}, // 開始時の状態
+                            { transform: 'rotate(0deg)' } // 終了時の状態
+                        ], 
+                        // タイミングに関する設定
+                        {
+                        fill: 'forwards', // 再生前後の状態（再生前、開始時の状態を適用）
+                        duration: 100, // 再生時間（1000ミリ秒）
+                        },
+                    );
+                    judge = 0;
+                }
             });
 
             // 背景クリックでメニューを閉じる
             document.addEventListener('click', (event) => {
                 if (!navMenu.contains(event.target) && !menuBtn.contains(event.target)) {
                     navMenu.classList.remove('active');
+                    image.animate(
+                    // 途中の状態を表す配列
+                    [
+                        { transform: 'rotate(90deg)'}, // 開始時の状態
+                        { transform: 'rotate(0deg)' } // 終了時の状態
+                    ], 
+                    // タイミングに関する設定
+                    {
+                    fill: 'forwards', // 再生前後の状態（再生前、開始時の状態を適用）
+                    duration: 100, // 再生時間（1000ミリ秒）
+                    },
+                );
                 }
             });
         });

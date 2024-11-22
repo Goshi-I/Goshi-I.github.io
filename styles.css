@@ -505,13 +505,6 @@ profile-list-sns li {
         transition: transform 0.3s ease;
     }
     
-
-    .mobile-header {
-        background-color: #111;
-        padding: 15px;
-        text-align: center;
-    }
-
     main {
         padding: 0px 0px 0px 0px;
         display: flex;

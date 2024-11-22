@@ -93,7 +93,7 @@ nav ul li a:hover .logo {
 .x-icon {
     position: absolute;
     right: 20px; /* Position it at the right end */
-    top: 3.9%;
+    top: 3.3%;
     transform: translateY(-50%);
     display: flex;
     align-items: center;
@@ -504,7 +504,7 @@ profile-list-sns li {
         height: auto;
         transition: transform 0.3s ease;
     }
-    
+
     main {
         padding: 0px 0px 0px 0px;
         display: flex;

@@ -496,9 +496,15 @@ profile-list-sns li {
     }
 
     .x-icon {
-        transform: scale(1.5);
-        padding: 0px 0px 20px 0px;
+        padding: 30px 0px 20px 0px;
     }
+
+    .x-icon img {
+        width: 40px; /* Adjust size as needed */
+        height: auto;
+        transition: transform 0.3s ease;
+    }
+    
 
     .mobile-header {
         background-color: #111;

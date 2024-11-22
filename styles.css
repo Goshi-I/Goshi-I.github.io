@@ -412,14 +412,59 @@ profile-list-sns li {
         flex-direction: column; /* Stack sections vertically */
         height: auto; /* Allow scrolling */
     }
-
+/*
     header {
-        padding: 10px;
+        display: none;
+    }
+*/
+    .menu-btn {
+        display: block;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        background-color: #111;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        z-index: 1000; /* Make sure it stays on top */
+    }
+
+    .menu-btn:hover {
+        background-color: #222;
+    }
+
+    .nav-menu {
+        display: none; /* Initially hidden */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #111;
+        padding: 20px;
+        z-index: 999;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-menu.active {
+        display: flex; /* Show menu when active */
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .nav-menu ul li {
+        margin: 15px 0;
     }
 
     .x-icon {
-        top: 10px;
-        right: 10px;
+        top: 20px;
+        right: 20px;
         transform: none;
     }
 }

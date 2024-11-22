@@ -326,6 +326,7 @@ a {
     align-items: flex-start; /* セクション内で垂直方向を中央揃え */
     padding: 10px 20px;
     height: 100%;
+    margin:0 auto
 }
 
 .profile-section h1 {

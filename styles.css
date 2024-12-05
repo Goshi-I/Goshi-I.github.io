@@ -384,6 +384,11 @@ a {
     color: #fff;
 }
 
+.profile-list-sns li:hover {
+    color: #fff;
+}
+
+
 /* Mobile styles */
 @media (max-width: 940px) {
     nav ul {
